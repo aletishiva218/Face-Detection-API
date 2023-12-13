@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgb(224, 224, 224);
+      font-family: 'Poppins', sans-serif;
+    }
+    canvas {
+      position: absolute;
+    }
+    .container{
+      text-align: center;
+      background-color: white;
+      border-radius: 1rem;
+      padding: 0.5rem;
+      box-shadow: 0 0 3px black;
+      color: #30336b;
+    }
+    #video{
+      border: 1px solid black;
+      height: fit-content;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Face Detection</h1>
+  <video id="video" width="720"  height="540" autoplay muted></video>
+  </div>
+</body>
+</html>
